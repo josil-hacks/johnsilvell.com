@@ -17,3 +17,25 @@
     font-weight: 900;
     font-family: 'Big Shoulders Stencil', sans-serif;
 }
+
+.languages {
+    border-style:groove;
+    border-width: 2px;
+    border-color: black;
+    background-color: #ff80ff;
+    box-shadow:10px 10px;
+}
+
+.languages:hover {
+    background-color: #cc00cc;
+    color:white;
+    box-shadow:10px 10px;
+}
+
+.programing {
+    border-style:groove;
+    border-width: 2px;
+    border-color: black;
+    background-color: #00cc66;
+    box-shadow:10px 10px;
+}
