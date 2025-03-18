@@ -1,0 +1,19 @@
+/* <weight>: Use a value from 100 to 900 */
+/* <uniquifier>: Use a unique and descriptive class name */
+
+.big-shoulders-stencil-<uniquifier> {
+    font-family: "Big Shoulders Stencil", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+.header {
+    background-color: black;
+    color: white;
+}
+
+.mainHeadline {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Big Shoulders Stencil', sans-serif;
+}
