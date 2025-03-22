@@ -45,3 +45,12 @@
     color:white;
     box-shadow:10px 10px;
 }
+
+.sourceCode {
+    float:right;
+}
+
+.footerButton {
+    background-color: black;
+    color: white;
+}
