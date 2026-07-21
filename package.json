@@ -1,0 +1,27 @@
+{
+  "name": "johnsilvell.com",
+  "version": "1.0.0",
+  "description": "The official source code for the brand new design for www.johnsilvell.com",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josil-hacks/johnsilvell.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/josil-hacks/johnsilvell.com/issues"
+  },
+  "homepage": "https://github.com/josil-hacks/johnsilvell.com#readme",
+  "devDependencies": {
+    "eslint": "^10.7.0",
+    "htmlhint": "^1.9.2",
+    "stylelint": "^17.14.1",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
