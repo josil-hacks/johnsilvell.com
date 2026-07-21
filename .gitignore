@@ -65,3 +65,4 @@ temp/
 # AI assistant local state
 .claude/
 .codex/
+AGENTS.md
