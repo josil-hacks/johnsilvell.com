@@ -56,6 +56,32 @@ jobs:
                     "$SSH_USER@$SSH_HOST" \
                     "echo 'SSH connection successful'"
 
+            - name: Check remote rsync
+              env:
+                SSH_HOST: ${{ secrets.SSH_HOST }}
+                SSH_PORT: ${{ secrets.SSH_PORT }}
+                SSH_USER: ${{ secrets.SSH_USER }}
+              run: |
+                ssh \
+                  -i ~/.ssh/deploy_key \
+                  -p "$SSH_PORT" \
+                  -o StrictHostKeyChecking=yes \
+                  "$SSH_USER@$SSH_HOST" \
+                  "command -v rsync && rsync --version"
+
+            - name: Check deployment directory
+              env:
+                SSH_HOST: ${{ secrets.SSH_HOST }}
+                SSH_PORT: ${{ secrets.SSH_PORT }}
+                SSH_USER: ${{ secrets.SSH_USER }}
+              run: |
+                ssh \
+                  -i ~/.ssh/deploy_key \
+                  -p "$SSH_PORT" \
+                  -o StrictHostKeyChecking=yes \
+                  "$SSH_USER@$SSH_HOST" \
+                  "pwd && ls -la && ls -la domains/johnsilvell.com/public_html/"
+
             - name: Deploy website with rsync
               env:
                 SSH_HOST: ${{ secrets.SSH_HOST }}
@@ -68,7 +94,6 @@ jobs:
                 --archive \
                 --verbose \
                 --compress \
-
                 --exclude='.git/' \
                 --exclude='.github/' \
                 --exclude='.gitignore' \
