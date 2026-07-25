@@ -1,176 +1,511 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>John Silvell</title>
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="John Silvell is a Stockholm-based DevOps Specialist focused on cloud platforms, automation, reliable systems and creative technical production.">
+    <meta name="theme-color" content="#14243B">
+    <meta property="og:title" content="John Silvell | DevOps, Cloud &amp; Platform Engineering">
+    <meta property="og:description" content="Personal portfolio for John Silvell, a DevOps Specialist focused on cloud platforms, automation and reliable systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.johnsilvell.com/">
+    <title>John Silvell | DevOps, Cloud &amp; Platform Engineering</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-
-    <!-- Bootstrap -->
-
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- End of Bootstrap integration -->
-
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-10">
-                    <br>
-                    <div class="mainHeadline">
-                        <h1>John Silvell</h1>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <br>
-                    <br>
-                    <p><i>DevOps Engineer</i></p>
-                </div>
-            </div>
-        </div>
-        <br>
-    </div>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Home</a>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;family=Source+Sans+3:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/branding/favicon_io/favicon-16x16.png" type="image/png">
+    <link rel="icon" href="/assets/branding/johnsilvell_favicon-32.svg" sizes="32x32">
+    <link rel="apple-touch-icon" href="/assets/branding/favicon_io/apple-touch-icon.png">
 
-            <!-- Toggler button for collapse -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#site-nav" data-bs-root-margin="0px 0px -70%" data-bs-smooth-scroll="true" tabindex="0">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav id="site-nav" class="navbar navbar-expand-lg navbar-dark sticky-top site-navbar" aria-label="Primary navigation">
+        <div class="container">
+            <a class="navbar-brand brand-mark" href="#top" aria-label="John Silvell home">
+                <span class="brand-symbol" aria-hidden="true">JS</span>
+                <span>John Silvell</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-navigation" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://chasacademy.se/program/devops-engineer" target="_blank">Chas Academy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.linkedin.com/in/john-silvell/" target="_blank">LinkedIn</a>
-                    </li>
+            <div id="primary-navigation" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#about">Intro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#learning">Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#leadership">Leadership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#creative">Creative</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">GIT</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="https://github.com/josil-hacks" target="_blank">GitHub</a></li>
-                          <li><a class="dropdown-item" href="https://gitlab.com/john.silvell" target="_blank">GitLab (private)</a></li>
-                          <li><a class="dropdown-item" href="https://git.chasacademy.dev/johnsilvell" target="_blank">GitLab (Chas Academy)</a></li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Git</a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="https://github.com/josil-hacks" target="_blank" rel="noopener">GitHub</a></li>
+                            <li><a class="dropdown-item" href="https://gitlab.com/john.silvell" target="_blank" rel="noopener">GitLab (private)</a></li>
+                            <li><a class="dropdown-item" href="https://git.chasacademy.dev/johnsilvell" target="_blank" rel="noopener">GitLab (Chas Academy)</a></li>
                         </ul>
-                      </li> 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#resume">Resume</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <br>
-    <div class="content">
+
+    <main id="main-content">
+        <!-- Hero -->
+        <section id="top" class="hero-section section-dark">
+            <div class="hero-network" aria-hidden="true">
+                <span class="network-line line-one"></span>
+                <span class="network-line line-two"></span>
+                <span class="network-line line-three"></span>
+                <span class="bubble bubble-blue bubble-one"></span>
+                <span class="bubble bubble-teal bubble-two"></span>
+                <span class="bubble bubble-violet bubble-three"></span>
+                <span class="bubble bubble-open bubble-four"></span>
+                <span class="bubble bubble-blue bubble-five"></span>
+            </div>
+            <div class="container position-relative">
+                <div class="row align-items-center min-vh-hero">
+                    <div class="col-lg-8 col-xl-7">
+                        <p class="eyebrow">DEVOPS / CLOUD / PLATFORM</p>
+                        <p class="role-label">John Silvell · DevOps Specialist</p>
+                        <h1>DevOps Specialist</h1>
+                        <h3 class="hero-subtitle">- Focused on AI, Cloud Platforms & Automation</h3>
+                        <p class="hero-lead">
+                            DevOps Engineer based in Stockholm, Sweden. Currently holding the position of DevOps Specialist at Bonnier News AB, with a focus on cloud platforms, automation and reliable systems.
+                        </p>
+                        <p class="hero-lead">
+                            Has a higher vocational degree in DevOps Engineering from Chas Academy, graduated in June 2026. Also experienced in web development, programming and creative production.
+                        </p>
+                        <div class="hero-actions d-flex flex-column flex-sm-row gap-3">
+                            <a class="btn btn-primary btn-lg" href="#projects">
+                                <i class="bi bi-diagram-3" aria-hidden="true"></i>
+                                View projects
+                            </a>
+                            <a class="btn btn-outline-light btn-lg" href="#contact">
+                                <i class="bi bi-send" aria-hidden="true"></i>
+                                Contact John
+                            </a>
+                        </div>
+                        <div class="signal-row" aria-label="Core focus areas">
+                            <span>Cloud Infrastructure</span>
+                            <span>Technical Leadership</span>
+                            <span>Creative Production</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <div class="hero-panel">
+                            <p class="panel-kicker">BASED IN STOCKHOLM</p>
+                            <dl>
+                                <div>
+                                    <dt>Current position</dt>
+                                    <dd>DevOps Specialist @ Bonnier News AB</dd>
+                                </div>
+                                <div>
+                                    <dt>Current contract</dt>
+                                    <dd>May 2026-January 2027</dd>
+                                </div>
+                                <div>
+                                    <dt>Languages</dt>
+                                    <dd>Swedish · English · German</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section id="about" class="section-pad">
+            <div class="container">
+                <span id="resume" class="anchor-target" aria-hidden="true"></span>
+                <div class="row g-4 align-items-start">
+                    <div class="col-lg-5">
+                        <p class="section-kicker">INTRODUCTION</p>
+                        <h2>Structured engineering with a personal edge.</h2>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="editorial-block">
+                            <p>
+                                John Silvell is a 21 year old hobby programmer based in Stockholm. His programming
+                                experience is primarily in web development with HTML, CSS and JavaScript, and Python.
+                                He also has earlier experience with game development in Unity using C#.
+                            </p>
+                            <p>
+                                John is currently studying to become a DevOps Engineer at Chas Academy in Stockholm
+                                and will graduate in June 2026.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competence Areas -->
+        <section id="skills" class="section-pad section-soft">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">COMPETENCE AREAS</p>
+                    <h2>Technical areas organized around systems, flow and reliability.</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-xl-4">
+                        <article class="feature-card">
+                            <div class="card-icon icon-blue"><i class="bi bi-cloud" aria-hidden="true"></i></div>
+                            <h3>Cloud Platforms</h3>
+                            <p>Cloud-oriented engineering focus through DevOps studies and platform work.</p>
+                            <div class="tag-list">
+                                <span>Cloud</span>
+                                <span>Platforms</span>
+                                <span>Reliability</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <article class="feature-card">
+                            <div class="card-icon icon-blue"><i class="bi bi-braces" aria-hidden="true"></i></div>
+                            <h3>Infrastructure as Code</h3>
+                            <p>Project experience with Terraform and configuration-oriented infrastructure thinking.</p>
+                            <div class="tag-list">
+                                <span>Terraform</span>
+                                <span>Automation</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <article class="feature-card">
+                            <div class="card-icon icon-blue"><i class="bi bi-arrow-repeat" aria-hidden="true"></i></div>
+                            <h3>CI/CD and Automation</h3>
+                            <p>Pipeline and automation practice with Jenkins, Bash and web tooling.</p>
+                            <div class="tag-list">
+                                <span>Jenkins</span>
+                                <span>Bash</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <article class="feature-card">
+                            <div class="card-icon icon-teal"><i class="bi bi-boxes" aria-hidden="true"></i></div>
+                            <h3>Containers and Platform Engineering</h3>
+                            <p>Project exposure to container orchestration and platform concepts.</p>
+                            <div class="tag-list">
+                                <span>Kubernetes</span>
+                                <span>Platform</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <article class="feature-card">
+                            <div class="card-icon icon-teal"><i class="bi bi-activity" aria-hidden="true"></i></div>
+                            <h3>Observability and Reliability</h3>
+                            <p>A reliability mindset focused on maintainable systems and clear operational feedback.</p>
+                            <div class="tag-list">
+                                <span>Systems</span>
+                                <span>Operations</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <article class="feature-card">
+                            <div class="card-icon icon-teal"><i class="bi bi-people" aria-hidden="true"></i></div>
+                            <h3>Collaboration and Technical Leadership</h3>
+                            <p>Communication across technical, organizational and creative contexts.</p>
+                            <div class="tag-list">
+                                <span>Swedish</span>
+                                <span>English</span>
+                                <span>German</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects and Experience -->
+        <section id="projects" class="section-pad">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">PROJECTS &amp; EXPERIENCE</p>
+                    <h2>Selected technical work and current engineering track.</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <article class="experience-card experience-highlight">
+                            <div class="card-meta">
+                                <span>EDUCATION</span>
+                                <span>IN PROGRESS</span>
+                            </div>
+                            <h3>DevOps Engineer studies</h3>
+                            <p class="context">Chas Academy · Stockholm</p>
+                            <p>Current DevOps Engineer program with planned graduation in June 2026.</p>
+                            <a class="text-link" href="https://chasacademy.se/program/devops-engineer" target="_blank" rel="noopener">
+                                Chas Academy program
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-lg-6">
+                        <article class="experience-card">
+                            <div class="card-meta">
+                                <span>PROJECT</span>
+                                <span>CI/CD</span>
+                            </div>
+                            <h3>CI/CD Pipeline with Jenkins</h3>
+                            <p>Pipeline project focused on automated delivery workflow concepts.</p>
+                            <div class="tag-list">
+                                <span>Jenkins</span>
+                                <span>Automation</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-6">
+                        <article class="experience-card">
+                            <div class="card-meta">
+                                <span>PROJECT</span>
+                                <span>CONTAINERS</span>
+                            </div>
+                            <h3>Container Orchestration with Kubernetes</h3>
+                            <p>Container orchestration project connected to platform engineering practice.</p>
+                            <div class="tag-list">
+                                <span>Kubernetes</span>
+                                <span>Containers</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-6">
+                        <article class="experience-card">
+                            <div class="card-meta">
+                                <span>PROJECT</span>
+                                <span>INFRASTRUCTURE</span>
+                            </div>
+                            <h3>Infrastructure as Code with Terraform</h3>
+                            <p>Infrastructure as Code project using Terraform-oriented workflows.</p>
+                            <div class="tag-list">
+                                <span>Terraform</span>
+                                <span>IaC</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-6">
+                        <article class="experience-card">
+                            <div class="card-meta">
+                                <span>PROJECT</span>
+                                <span>CONFIGURATION</span>
+                            </div>
+                            <h3>Configuration Management with Ansible</h3>
+                            <p>Configuration management project centered on repeatable system setup.</p>
+                            <div class="tag-list">
+                                <span>Ansible</span>
+                                <span>Automation</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-6">
+                        <article class="experience-card">
+                            <div class="card-meta">
+                                <span>OWN PROJECT</span>
+                                <span>STATIC SITE</span>
+                            </div>
+                            <h3>johnsilvell.com</h3>
+                            <p>This website, built as a static portfolio with HTML, CSS, JavaScript and Bootstrap.</p>
+                            <a class="text-link source-warning-link" href="https://github.com/josil-hacks/johnsilvell.com" target="_blank" rel="noopener">
+                                View source code
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications and Learning -->
+        <section id="learning" class="section-pad section-soft">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">CERTIFICATIONS &amp; LEARNING</p>
+                    <h2>Current study path and space for verified credentials.</h2>
+                </div>
+                <div class="row g-4 align-items-stretch">
+                    <div class="col-md-6 col-xl-4">
+                        <article class="learning-card">
+                            <span class="bubble-marker bubble-open" aria-hidden="true"></span>
+                            <p class="status-label">IN PROGRESS</p>
+                            <h3>DevOps Engineer program</h3>
+                            <p>Studying at Chas Academy in Stockholm with graduation planned for June 2026.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <article class="learning-card">
+                            <span class="bubble-marker bubble-open" aria-hidden="true"></span>
+                            <p class="status-label">PLANNED</p>
+                            <h3>Certifications</h3>
+                            <p>No completed certifications are listed in the current source material.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <article class="learning-card">
+                            <span class="bubble-marker bubble-blue" aria-hidden="true"></span>
+                            <p class="status-label">SELF-STUDY</p>
+                            <h3>Programming practice</h3>
+                            <p>Python, HTML, CSS, JavaScript, Bash, SQL and previous Unity/C# experience.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership -->
+        <section id="leadership" class="section-pad">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-5">
+                        <p class="section-kicker">LEADERSHIP &amp; TRUST</p>
+                        <h2>Organizing people, decisions and shared responsibility.</h2>
+                        <p class="section-intro">
+                            This section is structured for political assignments, association work or other trusted
+                            roles without turning the portfolio into a campaign page.
+                        </p>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="trust-grid">
+                            <article class="trust-item">
+                                <span class="bubble-marker bubble-teal" aria-hidden="true"></span>
+                                <h3>Responsibility</h3>
+                                <p>Use this space for confirmed roles, mandates or assignments.</p>
+                            </article>
+                            <article class="trust-item">
+                                <span class="bubble-marker bubble-teal" aria-hidden="true"></span>
+                                <h3>Strategic communication</h3>
+                                <p>Useful for work involving stakeholders, representation and decision-making.</p>
+                            </article>
+                            <article class="trust-item">
+                                <span class="bubble-marker bubble-teal" aria-hidden="true"></span>
+                                <h3>Collaboration</h3>
+                                <p>Connects naturally to technical leadership and cross-functional delivery.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music and Media Production -->
+        <section id="creative" class="section-pad creative-section">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <p class="section-kicker">MUSIC &amp; MEDIA PRODUCTION</p>
+                        <h2>Creative systems thinking beyond code.</h2>
+                        <p class="section-intro">
+                            Creative production, music work and media workflows can support technical problem-solving:
+                            signal flow, timing, tooling, communication and delivery all matter.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="creative-stack">
+                            <article>
+                                <i class="bi bi-soundwave" aria-hidden="true"></i>
+                                <div>
+                                    <h3>Production mindset</h3>
+                                    <p>Structured work from idea to finished output.</p>
+                                </div>
+                            </article>
+                            <article>
+                                <i class="bi bi-sliders" aria-hidden="true"></i>
+                                <div>
+                                    <h3>Digital tooling</h3>
+                                    <p>Understanding complex tools, feedback loops and signal paths.</p>
+                                </div>
+                            </article>
+                            <article>
+                                <i class="bi bi-broadcast" aria-hidden="true"></i>
+                                <div>
+                                    <h3>Audience awareness</h3>
+                                    <p>Communication and presentation shaped by context.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section-pad contact-section">
+            <div class="container">
+                <div class="contact-panel">
+                    <div>
+                        <p class="section-kicker">CONTACT</p>
+                        <h2>Let’s connect around cloud, automation or reliable systems.</h2>
+                        <p>For professional contact, use the existing channels below.</p>
+                    </div>
+                    <div class="contact-actions">
+                        <a class="btn btn-primary btn-lg" href="mailto:john.silvell@josil.se">
+                            <i class="bi bi-envelope" aria-hidden="true"></i>
+                            Email John
+                        </a>
+                        <a class="btn btn-outline-primary btn-lg" href="https://www.linkedin.com/in/john-silvell/" target="_blank" rel="noopener">
+                            <i class="bi bi-linkedin" aria-hidden="true"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                    <ul class="contact-list" aria-label="Contact details">
+                        <li><i class="bi bi-envelope" aria-hidden="true"></i><a href="mailto:john.silvell@josil.se">john.silvell@josil.se</a></li>
+                        <li><i class="bi bi-telephone" aria-hidden="true"></i><a href="tel:+46729698282">(+46) 072-969 82 82</a></li>
+                        <li><i class="bi bi-github" aria-hidden="true"></i><a href="https://github.com/josil-hacks" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><i class="bi bi-gitlab" aria-hidden="true"></i><a href="https://gitlab.com/john.silvell" target="_blank" rel="noopener">GitLab (private)</a></li>
+                        <li><i class="bi bi-gitlab" aria-hidden="true"></i><a href="https://git.chasacademy.dev/johnsilvell" target="_blank" rel="noopener">GitLab (Chas Academy)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 id="about">About</h2>
-                    <p>John Silvell is 21 year old hobby programmer based in Stockholm. His programing experience is primarly in web development (HTML, CSS & JavaScript) and Python. However, he has some earlier experience with game development in Unity using C#.</p>
-                    <p>John Silvell is currently studying to DevOps Engineer @ Chas Academy in Stockholm. He will graduate in June 2026.</p>
+            <div class="row g-3 align-items-center">
+                <div class="col-md-5">
+                    <p class="mb-0">&copy; <span id="current-year">2025</span> John Silvell</p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="languages">
-                        <h3>Spoken Languages:</h3>
-                        <ul>
-                            <li>Swedish</li>
-                            <li>English</li>
-                            <li>German</li>
-                        </ul>
-                    </div>
+                <div class="col-md-3 text-md-center">
+                    <p class="footer-meta mb-0">CLOUD · AUTOMATION · RELIABILITY</p>
                 </div>
-                <div class="col-md-6">
-                    <div class="programing">
-                        <h3>Programing Languages:</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>Web development (HTML, CSS & JavaScript)</li>
-                            <li>Bash</li>
-                            <!-- <li>YAML</li> -->
-                            <li>SQL</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 id="contact">Contact</h2>
-                    <p>Email: <a href="mailto:john.silvell@josil.se">john.silvell@josil.se</a></p>
-                    <p>Phone: (+46) 072-969 82 82</p>
-                    <p><a href="https://www.linkedin.com/in/john-silvell/">LinkedIn</a></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 id="projects">Projects</h2>
-                    <p>Here are some of the projects that John Silvell has worked on:</p>
-                    <ul>
-                        <li>CI/CD Pipeline with Jenkins</li>
-                        <li>Container Orchestration with Kubernetes</li>
-                        <li>Infrastructure as Code with Terraform</li>
-                        <li>Configuration Management with Ansible</li>
-                        <li>This website!</li>
+                <div class="col-md-4">
+                    <ul class="footer-links">
+                        <li><a href="https://www.linkedin.com/in/john-silvell/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a class="source-warning-link" href="https://github.com/josil-hacks/johnsilvell.com" target="_blank" rel="noopener">Source code</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <!-- Empty column -->
+    </footer>
+
+    <aside id="development-banner" class="development-banner" aria-labelledby="development-banner-title">
+        <div class="container">
+            <div class="development-banner-content">
+                <div class="development-banner-message">
+                    <p id="development-banner-title" class="development-banner-title">The website is under development</p>
+                    <p class="development-banner-text">
+                        Some features and information are incomplete and may change.
+                    </p>
                 </div>
-                <div class="col-md-4">
-                   <center>
-                        <p><small>&copy; 2025 John Silvell | ALL RIGHTS RESERVED</small></p>
-                   </center>
-                </div>
-                <div class="col-md-4">
-                    <div class="sourceCode">
-                        <a href="https://github.com/josil-hacks/johnsilvell.com" target="_blank">
-                            <button type="button" class="footerButton" onclick="warningLeave()">View Source Code</button>
-                        </a>
-                    </div>
+                <button id="development-banner-ok" class="btn btn-primary development-banner-button" type="button">
+                    OK
+                </button>
             </div>
         </div>
-    </div>
+    </aside>
 </body>
 </html>
