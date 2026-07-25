@@ -250,6 +250,13 @@ h3 {
     padding: clamp(5rem, 9vw, 8rem) 0;
 }
 
+.hero-subtitle {
+    color: #fff;
+    font-size: clamp(1.15rem, 2vw, 1.35rem);
+    font-style: italic;
+    max-width: 760px;
+}
+
 .hero-lead {
     color: rgb(255 255 255 / 82%);
     font-size: clamp(1.15rem, 2vw, 1.35rem);
