@@ -8,9 +8,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const sourceLinks = document.querySelectorAll(".source-warning-link");
     const navLinks = document.querySelectorAll(".navbar-collapse .nav-link");
     const navCollapse = document.getElementById("primary-navigation");
+    const developmentBanner = document.getElementById("development-banner");
+    const developmentBannerOk = document.getElementById("development-banner-ok");
+
+    function dismissDevelopmentBanner() {
+        developmentBanner.classList.add("is-hidden");
+    }
 
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
+    }
+
+    if (developmentBanner && developmentBannerOk) {
+        developmentBannerOk.addEventListener("click", dismissDevelopmentBanner);
     }
 
     sourceLinks.forEach((link) => {

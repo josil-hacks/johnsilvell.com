@@ -631,6 +631,57 @@ h3 {
     color: #fff;
 }
 
+.development-banner {
+    background: rgb(246 248 251 / 96%);
+    border-top: 1px solid var(--color-border);
+    bottom: 0;
+    box-shadow: 0 -12px 32px rgb(20 36 59 / 12%);
+    color: var(--color-text);
+    left: 0;
+    padding: 1rem 0;
+    position: fixed;
+    right: 0;
+    z-index: 1080;
+}
+
+.development-banner.is-hidden {
+    display: none;
+}
+
+.development-banner-content {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.development-banner-message {
+    border-left: 3px solid var(--color-secondary-accent);
+    padding-left: 1rem;
+}
+
+.development-banner-title {
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.25;
+    margin: 0 0 0.2rem;
+}
+
+.development-banner-text {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.development-banner-button {
+    flex: 0 0 auto;
+    justify-content: center;
+    min-width: 4.25rem;
+}
+
 @media (width >= 768px) {
     .contact-panel {
         grid-template-columns: 1.4fr 1fr;
@@ -695,6 +746,16 @@ h3 {
 
     .contact-list {
         overflow-wrap: anywhere;
+    }
+
+    .development-banner-content {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .development-banner-button {
+        justify-content: center;
+        width: 100%;
     }
 }
 
