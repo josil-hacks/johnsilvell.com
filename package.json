@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "npm run lint:html && npm run lint:css && npm run lint:js",
     "lint:html": "htmlhint \"**/*.html\"",
-    "lint:css": "stylelint \"**/*.css\"",
+    "lint:css": "stylelint --config config/lint/stylelint.config.mjs \"**/*.css\"",
     "lint:js": "eslint --config config/lint/eslint.config.mjs \"**/*.js\""
   },
   "repository": {
