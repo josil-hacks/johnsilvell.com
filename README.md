@@ -19,6 +19,10 @@ Current implementation highlights:
 - A sticky development banner appears at the bottom of each page load and can be dismissed with an OK button.
 - Favicons and branding assets live in `assets/branding/`.
 
+### Last update:
+
+The last update was the total redesign and implmentation of the new graphical profile.
+
 ## Project Structure
 
 - `index.html` - main page markup and content.
