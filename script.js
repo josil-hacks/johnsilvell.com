@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const developmentBannerOk = document.getElementById("development-banner-ok");
     const legalNotice = document.getElementById("legal-notice");
     const legalNoticeToggle = document.getElementById("legal-notice-toggle");
+    const responsibilityContext = document.getElementById("responsibility-context");
+    const responsibilityToggle = document.getElementById("responsibility-toggle");
 
     function dismissDevelopmentBanner() {
         developmentBanner.classList.add("is-hidden");
@@ -32,6 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
             legalNotice.hidden = !isOpening;
             legalNoticeToggle.setAttribute("aria-expanded", String(isOpening));
             legalNoticeToggle.textContent = isOpening ? "Hide legal notice" : "Legal notice";
+        });
+    }
+
+    if (responsibilityContext && responsibilityToggle) {
+        responsibilityToggle.addEventListener("click", () => {
+            const isOpening = responsibilityContext.hidden;
+
+            responsibilityContext.hidden = !isOpening;
+            responsibilityToggle.setAttribute("aria-expanded", String(isOpening));
+            responsibilityToggle.textContent = isOpening ? "Show less ←" : "Read more →";
         });
     }
 

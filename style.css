@@ -559,6 +559,31 @@ h3 {
     font-size: 1.2rem;
 }
 
+.role-title {
+    font-size: 1.125rem;
+    line-height: 1.25;
+    margin: 1.25rem 0 0.25rem;
+}
+
+.role-context {
+    margin: 0;
+}
+
+.responsibility-toggle {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    color: var(--color-interactive);
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0;
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.18em;
+}
+
 .creative-section {
     background:
         radial-gradient(circle at 5% 20%, rgb(117 87 213 / 12%), transparent 28%),
