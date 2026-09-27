@@ -588,6 +588,25 @@ h3 {
     line-height: 0.5;
 }
 
+.legal-notice-toggle {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.75rem;
+    padding: 0;
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.18em;
+}
+
+.legal-notice-control,
+.Legal-notice {
+    flex-basis: 100%;
+}
+
 .creative-tool {
     align-items: center;
     background: var(--color-surface);

@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const navCollapse = document.getElementById("primary-navigation");
     const developmentBanner = document.getElementById("development-banner");
     const developmentBannerOk = document.getElementById("development-banner-ok");
+    const legalNotice = document.getElementById("legal-notice");
+    const legalNoticeToggle = document.getElementById("legal-notice-toggle");
 
     function dismissDevelopmentBanner() {
         developmentBanner.classList.add("is-hidden");
@@ -21,6 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (developmentBanner && developmentBannerOk) {
         developmentBannerOk.addEventListener("click", dismissDevelopmentBanner);
+    }
+
+    if (legalNotice && legalNoticeToggle) {
+        legalNoticeToggle.addEventListener("click", () => {
+            const isOpening = legalNotice.hidden;
+
+            legalNotice.hidden = !isOpening;
+            legalNoticeToggle.setAttribute("aria-expanded", String(isOpening));
+            legalNoticeToggle.textContent = isOpening ? "Hide legal notice" : "Legal notice";
+        });
     }
 
     sourceLinks.forEach((link) => {
