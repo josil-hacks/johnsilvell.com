@@ -65,6 +65,35 @@ h1 {
     max-width: 13ch;
 }
 
+.rotating-role {
+    color: var(--color-secondary-accent);
+    display: inline-block;
+    min-width: 9ch;
+    vertical-align: baseline;
+}
+
+.rotating-role.is-changing {
+    animation: role-change 240ms ease-out;
+}
+
+@keyframes role-change {
+    from {
+        opacity: 0;
+        transform: translateY(0.2em);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .rotating-role.is-changing {
+        animation: none;
+    }
+}
+
 h2 {
     font-size: clamp(2rem, 4vw, 2.35rem);
 }
