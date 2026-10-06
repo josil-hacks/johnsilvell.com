@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const developmentBannerOk = document.getElementById("development-banner-ok");
     const legalNotice = document.getElementById("legal-notice");
     const legalNoticeToggle = document.getElementById("legal-notice-toggle");
+    const responsibilityContext = document.getElementById("responsibility-context");
+    const responsibilityToggle = document.getElementById("responsibility-toggle");
+    const rotatingRole = document.querySelector(".rotating-role");
 
     function dismissDevelopmentBanner() {
         developmentBanner.classList.add("is-hidden");
@@ -19,6 +22,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
+    }
+
+    if (rotatingRole && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        const roles = ["DevOps", "Cloud", "Plattform"];
+        let roleIndex = 0;
+
+        window.setInterval(() => {
+            roleIndex = (roleIndex + 1) % roles.length;
+            rotatingRole.classList.remove("is-changing");
+            rotatingRole.textContent = roles[roleIndex];
+            void rotatingRole.offsetWidth;
+            rotatingRole.classList.add("is-changing");
+        }, 2000);
     }
 
     if (developmentBanner && developmentBannerOk) {
@@ -32,6 +48,16 @@ document.addEventListener("DOMContentLoaded", () => {
             legalNotice.hidden = !isOpening;
             legalNoticeToggle.setAttribute("aria-expanded", String(isOpening));
             legalNoticeToggle.textContent = isOpening ? "Hide legal notice" : "Legal notice";
+        });
+    }
+
+    if (responsibilityContext && responsibilityToggle) {
+        responsibilityToggle.addEventListener("click", () => {
+            const isOpening = responsibilityContext.hidden;
+
+            responsibilityContext.hidden = !isOpening;
+            responsibilityToggle.setAttribute("aria-expanded", String(isOpening));
+            responsibilityToggle.textContent = isOpening ? "Show less ←" : "Read more →";
         });
     }
 
