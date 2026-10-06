@@ -317,6 +317,23 @@ h3 {
     padding: 0.45rem 0.75rem;
 }
 
+.hero-image {
+    aspect-ratio: 1;
+    border: 1px solid rgb(255 255 255 / 16%);
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+    width: min(100%, 15rem);
+}
+
+.hero-image img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 5%;
+    width: 100%;
+}
+
 .hero-panel {
     background: rgb(255 255 255 / 8%);
     border: 1px solid rgb(255 255 255 / 16%);
