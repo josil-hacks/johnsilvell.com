@@ -426,6 +426,41 @@ h3 {
     width: 1.8rem;
 }
 
+.bubble-six {
+    height: 1.4rem;
+    right: 38%;
+    top: 13%;
+    width: 1.4rem;
+}
+
+.bubble-seven {
+    bottom: 25%;
+    height: 2.4rem;
+    left: 27%;
+    width: 2.4rem;
+}
+
+.bubble-eight {
+    height: 0.9rem;
+    right: 44%;
+    top: 44%;
+    width: 0.9rem;
+}
+
+.bubble-nine {
+    bottom: 7%;
+    height: 3.2rem;
+    right: 39%;
+    width: 3.2rem;
+}
+
+.bubble-ten {
+    height: 1.1rem;
+    left: -0.25rem;
+    top: 51%;
+    width: 1.1rem;
+}
+
 .network-line {
     background: rgb(255 255 255 / 20%);
     display: block;
@@ -457,26 +492,116 @@ h3 {
 
 .hero-section .bubble,
 .hero-section .network-line {
-    animation: node-drift 16s ease-in-out infinite alternate;
+    will-change: translate;
 }
 
-.hero-section .bubble-two,
-.hero-section .line-two {
-    animation-duration: 19s;
+.hero-section .bubble {
+    animation: bubble-drift 16s ease-in-out infinite alternate;
+    will-change: scale, translate;
 }
 
-.hero-section .bubble-three,
-.hero-section .line-three {
+.hero-section .network-line {
+    animation: line-drift 18s ease-in-out infinite alternate;
+}
+
+/* Each node has a slightly different route so the network feels alive, not synchronized. */
+.hero-section .bubble-one {
+    animation-duration: 18s;
+}
+
+.hero-section .bubble-two {
+    animation-delay: -7s;
+    animation-duration: 14s;
+    animation-direction: alternate-reverse;
+}
+
+.hero-section .bubble-three {
+    animation-delay: -11s;
+    animation-duration: 21s;
+}
+
+.hero-section .bubble-four {
+    animation-delay: -4s;
+    animation-duration: 24s;
+    animation-direction: alternate-reverse;
+}
+
+.hero-section .bubble-five {
+    animation-delay: -9s;
+    animation-duration: 13s;
+}
+
+.hero-section .bubble-six {
+    animation-delay: -15s;
+    animation-duration: 17s;
+    animation-direction: alternate-reverse;
+}
+
+.hero-section .bubble-seven {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+.hero-section .bubble-eight {
+    animation-delay: -12s;
+    animation-duration: 12s;
+    animation-direction: alternate-reverse;
+}
+
+.hero-section .bubble-nine {
+    animation-delay: -17s;
     animation-duration: 22s;
 }
 
-@keyframes node-drift {
-    from {
-        translate: 0 0;
+.hero-section .bubble-ten {
+    animation-delay: -3s;
+    animation-duration: 15s;
+    animation-direction: alternate-reverse;
+}
+
+.hero-section .line-one {
+    animation-duration: 20s;
+}
+
+.hero-section .line-two {
+    animation-delay: -8s;
+    animation-duration: 16s;
+    animation-direction: alternate-reverse;
+}
+
+.hero-section .line-three {
+    animation-delay: -13s;
+    animation-duration: 23s;
+}
+
+@keyframes bubble-drift {
+    0% {
+        scale: 0.82;
+        translate: -1.2rem 0.7rem;
     }
 
-    to {
+    45% {
+        scale: 1.1;
+        translate: 1.4rem -1.1rem;
+    }
+
+    100% {
+        scale: 0.9;
+        translate: 0.5rem 1.3rem;
+    }
+}
+
+@keyframes line-drift {
+    0% {
+        translate: -0.9rem 0.6rem;
+    }
+
+    50% {
         translate: 1.1rem -0.8rem;
+    }
+
+    100% {
+        translate: 0.4rem 1rem;
     }
 }
 
@@ -864,6 +989,8 @@ h3 {
     }
 
     .bubble-two,
+    .bubble-seven,
+    .bubble-nine,
     .line-two {
         display: none;
     }
