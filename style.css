@@ -615,6 +615,94 @@ h3 {
     padding-left: 1.5rem;
 }
 
+/* Competence areas */
+.work-tracks {
+    border-top: 1px solid var(--color-border);
+}
+
+.work-track {
+    display: grid;
+    gap: clamp(2rem, 5vw, 5rem);
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    padding: clamp(2.5rem, 5vw, 4.25rem) 0;
+}
+
+.work-track + .work-track {
+    border-top: 1px solid var(--color-border);
+}
+
+.work-track-editorial {
+    max-width: 31rem;
+}
+
+.track-number {
+    color: var(--color-text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.4rem;
+}
+
+.work-track h3 {
+    font-size: clamp(1.6rem, 3vw, 2.1rem);
+    margin-bottom: 0.85rem;
+}
+
+.work-track-copy {
+    color: var(--color-text-muted);
+    font-family: var(--font-editorial);
+    font-size: clamp(1.18rem, 2vw, 1.35rem);
+    line-height: 1.55;
+    margin-bottom: 0;
+}
+
+.work-evidence {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.work-evidence-item {
+    align-items: start;
+    display: grid;
+    gap: 0.25rem 1rem;
+    padding: 1.1rem 0;
+}
+
+.work-evidence-item + .work-evidence-item {
+    border-top: 1px solid var(--color-border);
+}
+
+.work-evidence strong {
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.work-evidence-link {
+    color: var(--color-interactive);
+}
+
+.work-evidence-link:hover,
+.work-evidence-link:focus {
+    color: var(--color-primary);
+}
+
+.work-evidence span {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.kubernetes-tools {
+    color: var(--color-text-muted);
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 .feature-card,
 .experience-card,
 .learning-card,
@@ -968,6 +1056,10 @@ h3 {
 }
 
 @media (width <= 991.98px) {
+    .work-track {
+        grid-template-columns: 1fr;
+    }
+
     .site-navbar .navbar-nav {
         align-items: stretch;
         gap: 0.25rem;
