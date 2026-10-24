@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (rotatingRole && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-        const roles = ["DevOps", "Cloud", "Plattform"];
+        const roles = ["DevOps", "Cloud", "Platform"];
         let roleIndex = 0;
 
         window.setInterval(() => {
