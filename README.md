@@ -2,7 +2,7 @@
 
 Source code for [www.johnsilvell.com](https://www.johnsilvell.com/), a static personal website for John Silvell.
 
-The site presents John as a DevOps Engineer in training, with additional sections for music and media production, leadership, projects, learning, and contact information.
+The site presents John as a DevOps/Cloud/Platform Engineer with additional sections for music and media production, leadership, experience, learning, and contact information.
 
 ## Current Status
 

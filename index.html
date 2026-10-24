@@ -43,7 +43,7 @@
                     <li class="nav-item"><a class="nav-link" href="#about">Intro</a></li>
                     <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#learning">Learning</a></li>
                     <li class="nav-item"><a class="nav-link" href="#leadership">Leadership</a></li>
                     <li class="nav-item"><a class="nav-link" href="#creative">Creative</a></li>
@@ -73,6 +73,11 @@
                 <span class="bubble bubble-violet bubble-three"></span>
                 <span class="bubble bubble-open bubble-four"></span>
                 <span class="bubble bubble-blue bubble-five"></span>
+                <span class="bubble bubble-teal bubble-six"></span>
+                <span class="bubble bubble-violet bubble-seven"></span>
+                <span class="bubble bubble-blue bubble-eight"></span>
+                <span class="bubble bubble-open bubble-nine"></span>
+                <span class="bubble bubble-teal bubble-ten"></span>
             </div>
             <div class="container position-relative">
                 <div class="row align-items-center min-vh-hero">
@@ -87,13 +92,10 @@
                         <p class="hero-lead">
                             DevOps Engineer based in Stockholm, Sweden. Currently holding the position of DevOps Specialist at Bonnier News AB, with a focus on cloud platforms, automation and reliable systems.
                         </p>
-                        <p class="hero-lead">
-                            Has a higher vocational degree in DevOps Engineering from Chas Academy, graduated in June 2026. Also experienced in web development, programming and creative production.
-                        </p>
                         <div class="hero-actions d-flex flex-column flex-sm-row gap-3">
-                            <a class="btn btn-primary btn-lg" href="#projects">
+                            <a class="btn btn-primary btn-lg" href="#experience">
                                 <i class="bi bi-diagram-3" aria-hidden="true"></i>
-                                View projects
+                                View experience
                             </a>
                             <a class="btn btn-outline-light btn-lg" href="#contact">
                                 <i class="bi bi-send" aria-hidden="true"></i>
@@ -106,7 +108,10 @@
                             <span>Creative Production</span>
                         </div>
                     </div>
-                    <div class="col-lg-4 d-none d-lg-block">
+                    <div class="col-lg-4">
+                        <div class="hero-image">
+                            <img src="assets/other/js_outdoor-looking-up.jpg" alt="John Silvell">
+                        </div>
                         <div class="hero-panel">
                             <p class="panel-kicker">BASED IN STOCKHOLM</p>
                             <dl>
@@ -159,175 +164,166 @@
             <div class="container">
                 <div class="section-heading">
                     <p class="section-kicker">COMPETENCE AREAS</p>
-                    <h2>Technical areas organized around systems, flow and reliability.</h2>
+                    <h2>How I approach platform engineering...</h2>
                 </div>
-                <div class="row g-4">
-                    <div class="col-md-6 col-xl-4">
-                        <article class="feature-card">
-                            <div class="card-icon icon-blue"><i class="bi bi-cloud" aria-hidden="true"></i></div>
-                            <h3>Cloud Platforms</h3>
-                            <p>Cloud-oriented engineering focus through DevOps studies and platform work.</p>
-                            <div class="tag-list">
-                                <span>Cloud</span>
-                                <span>Platforms</span>
-                                <span>Reliability</span>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-xl-4">
-                        <article class="feature-card">
-                            <div class="card-icon icon-blue"><i class="bi bi-braces" aria-hidden="true"></i></div>
-                            <h3>Infrastructure as Code</h3>
-                            <p>Project experience with Terraform and configuration-oriented infrastructure thinking.</p>
-                            <div class="tag-list">
-                                <span>Terraform</span>
-                                <span>Automation</span>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-xl-4">
-                        <article class="feature-card">
-                            <div class="card-icon icon-blue"><i class="bi bi-arrow-repeat" aria-hidden="true"></i></div>
-                            <h3>CI/CD and Automation</h3>
-                            <p>Pipeline and automation practice with Jenkins, Bash and web tooling.</p>
-                            <div class="tag-list">
-                                <span>Jenkins</span>
-                                <span>Bash</span>
-                                <span>JavaScript</span>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-xl-4">
-                        <article class="feature-card">
-                            <div class="card-icon icon-teal"><i class="bi bi-boxes" aria-hidden="true"></i></div>
-                            <h3>Containers and Platform Engineering</h3>
-                            <p>Project exposure to container orchestration and platform concepts.</p>
-                            <div class="tag-list">
-                                <span>Kubernetes</span>
-                                <span>Platform</span>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-xl-4">
-                        <article class="feature-card">
-                            <div class="card-icon icon-teal"><i class="bi bi-activity" aria-hidden="true"></i></div>
-                            <h3>Observability and Reliability</h3>
-                            <p>A reliability mindset focused on maintainable systems and clear operational feedback.</p>
-                            <div class="tag-list">
-                                <span>Systems</span>
-                                <span>Operations</span>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-xl-4">
-                        <article class="feature-card">
-                            <div class="card-icon icon-teal"><i class="bi bi-people" aria-hidden="true"></i></div>
-                            <h3>Collaboration and Technical Leadership</h3>
-                            <p>Communication across technical, organizational and creative contexts.</p>
-                            <div class="tag-list">
-                                <span>Swedish</span>
-                                <span>English</span>
-                                <span>German</span>
-                            </div>
-                        </article>
-                    </div>
+                <div class="work-tracks">
+                    <article class="work-track work-track-build">
+                        <div class="work-track-editorial">
+                            <p class="track-number" aria-hidden="true">01</p>
+                            <h3>Build systems</h3>
+                            <p class="work-track-copy">Build the foundations first: clear cloud platforms, repeatable infrastructure and portable workloads. The aim is to make systems understandable to the people who need to operate and extend them, but also to ensure they are maintainable and scalable.</p>
+                            <br>
+                            <p class="work-track-copy">For me it is important to build systems, workflows and processes that are efficient and effective so that developers can easily deploy and manage their applications by themselves.</p>
+                        </div>
+                        <ul class="work-evidence" aria-label="Evidence for building systems">
+                            <li class="work-evidence-item">
+                                <strong>Infrastructure as Code</strong>
+                                <span>Managing and building infrastructure through code with Terraform. I have experience with both GCP and Hetzner Cloud platforms. As a DevOps Specialist, I have applied these skills in real-world scenarios (Bonnier News) to streamline deployment processes and improve system reliability by expanding and updating our internal Terraform-modules so that developers can easily deploy and manage their applications by themselves.</span>
+                            </li>
+                            <li class="work-evidence-item">
+                                <strong>Container orchestration</strong>
+                                <span>Kubernetes project experience connecting containers to platform engineering practice.</span>
+                                <span>For Kubernetes I have exprimented and used the following tools:</span>
+                                <ul class="kubernetes-tools" aria-label="Kubernetes tools experience">
+                                    <li>kubectl</li>
+                                    <li>Google Kubernetes Engine (GKE)</li>
+                                    <li>Helm</li>
+                                    <li>Minikube</li>
+                                    <li>k3s</li>
+                                </ul>
+                            </li>
+                            <li class="work-evidence-item">
+                                <strong>Personal projects: Josil Lab</strong>
+                                <span>A personal project space for turning infrastructure and platform ideas into hands-on practice. Using tools like Terraform and Docker, I build and experiment with different approaches to digital infrastructure, all deployed in a cloud environment. This whole project has been developed outside of my regular work responsibilities. <a class="work-evidence-link" href="https://github.com/josil-hacks/josil-lab" target="_blank" rel="noopener">View the project repository</a></span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="work-track work-track-delivery">
+                        <div class="work-track-editorial">
+                            <p class="track-number" aria-hidden="true">02</p>
+                            <h3>Make delivery dependable</h3>
+                            <p class="work-track-copy">Make the path from change to production calm, visible and repeatable. Automation removes avoidable friction; operational feedback keeps the next decision grounded in what the system is actually doing.</p>
+                        </div>
+                        <ul class="work-evidence" aria-label="Evidence for dependable delivery">
+                            <li class="work-evidence-item">
+                                <strong>Continuous delivery</strong>
+                                <span>Jenkins pipeline project focused on an automated delivery workflow.</span>
+                            </li>
+                            <li class="work-evidence-item">
+                                <strong>Automation with feedback</strong>
+                                <span>Bash, JavaScript and configuration tools reduce repeatable manual work, while observability keeps the delivery path visible.</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="work-track work-track-people">
+                        <div class="work-track-editorial">
+                            <p class="track-number" aria-hidden="true">03</p>
+                            <h3>Work across people and contexts</h3>
+                            <p class="work-track-copy">Good technical work is a shared practice. I adapt the conversation to the people in it—whether the context is engineering, education, creative production or public-facing collaboration.</p>
+                        </div>
+                        <ul class="work-evidence" aria-label="Evidence for collaboration across contexts">
+                            <li class="work-evidence-item">
+                                <strong>Platform work in practice</strong>
+                                <span>DevOps Specialist at Bonnier News, focused on cloud platforms, automation and reliable systems.</span>
+                            </li>
+                            <li class="work-evidence-item">
+                                <strong>Technical representation</strong>
+                                <span>Student representative experience in programme and administrative meetings at Chas Academy.</span>
+                            </li>
+                            <li class="work-evidence-item">
+                                <strong>Communication across contexts</strong>
+                                <span>Working across Swedish, English and German, with experience in technical and creative workflows.</span>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Projects and Experience -->
-        <section id="projects" class="section-pad">
+        <!-- Experience -->
+        <section id="experience" class="section-pad experience-section">
             <div class="container">
                 <div class="section-heading">
-                    <p class="section-kicker">PROJECTS &amp; EXPERIENCE</p>
-                    <h2>Selected technical work and current engineering track.</h2>
+                    <p class="section-kicker">EXPERIENCE</p>
+                    <h2>A path from early curiosity to platform engineering.</h2>
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-6">
-                        <article class="experience-card experience-highlight">
-                            <div class="card-meta">
-                                <span>EDUCATION</span>
-                                <span>IN PROGRESS</span>
+                <div class="experience-timeline" tabindex="0" aria-label="John Silvell's experience timeline from 2017 to now">
+                    <ol class="timeline-list">
+                        <li class="timeline-event">
+                            <p class="timeline-year">2017</p>
+                            <div class="timeline-marker" aria-hidden="true"></div>
+                            <div class="timeline-copy">
+                                <h3>First steps in programming</h3>
+                                <p>Learned the basics of programming with Scratch and web development with HTML, CSS and JavaScript at age 13, through courses from Nox Consulting and Dagens Nyheter for 12–16-year-olds.</p>
                             </div>
-                            <h3>DevOps Engineer studies</h3>
-                            <p class="context">Chas Academy · Stockholm</p>
-                            <p>Current DevOps Engineer program with planned graduation in June 2026.</p>
-                            <a class="text-link" href="https://chasacademy.se/program/devops-engineer" target="_blank" rel="noopener">
-                                Chas Academy program
-                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
-                            </a>
-                        </article>
-                    </div>
-                    <div class="col-lg-6">
-                        <article class="experience-card">
-                            <div class="card-meta">
-                                <span>PROJECT</span>
-                                <span>CI/CD</span>
+                        </li>
+                        <li class="timeline-event">
+                            <p class="timeline-year">2018</p>
+                            <div class="timeline-marker" aria-hidden="true"></div>
+                            <div class="timeline-copy">
+                                <h3>Game development with Unity</h3>
+                                <p>Took a second Dagens Nyheter and Nox Consulting course, focused on building games in Unity with C#, at age 14.</p>
                             </div>
-                            <h3>CI/CD Pipeline with Jenkins</h3>
-                            <p>Pipeline project focused on automated delivery workflow concepts.</p>
-                            <div class="tag-list">
-                                <span>Jenkins</span>
-                                <span>Automation</span>
+                        </li>
+                        <li class="timeline-event">
+                            <p class="timeline-year">2019</p>
+                            <div class="timeline-marker" aria-hidden="true"></div>
+                            <div class="timeline-copy">
+                                <h3>Python in school</h3>
+                                <p>Learned Python fundamentals during a few lessons in year 8 of Swedish elementary school.</p>
                             </div>
-                        </article>
-                    </div>
-                    <div class="col-lg-6">
-                        <article class="experience-card">
-                            <div class="card-meta">
-                                <span>PROJECT</span>
-                                <span>CONTAINERS</span>
+                        </li>
+                        <li class="timeline-event">
+                            <p class="timeline-year">2020</p>
+                            <div class="timeline-marker" aria-hidden="true"></div>
+                            <div class="timeline-copy">
+                                <h3>Electrical engineering studies</h3>
+                                <p>Started the vocational electrician programme at Thorildsplans gymnasium in Stockholm at age 16.</p>
                             </div>
-                            <h3>Container Orchestration with Kubernetes</h3>
-                            <p>Container orchestration project connected to platform engineering practice.</p>
-                            <div class="tag-list">
-                                <span>Kubernetes</span>
-                                <span>Containers</span>
+                        </li>
+                        <li class="timeline-event">
+                            <p class="timeline-year">2022–23</p>
+                            <div class="timeline-marker" aria-hidden="true"></div>
+                            <div class="timeline-copy">
+                                <h3>Electrician internship</h3>
+                                <p>Completed an APL internship as an electrician with Granitor Electro.</p>
                             </div>
-                        </article>
-                    </div>
-                    <div class="col-lg-6">
-                        <article class="experience-card">
-                            <div class="card-meta">
-                                <span>PROJECT</span>
-                                <span>INFRASTRUCTURE</span>
+                        </li>
+                        <li class="timeline-event">
+                            <p class="timeline-year">2023</p>
+                            <div class="timeline-marker" aria-hidden="true"></div>
+                            <div class="timeline-copy">
+                                <h3>Vocational degree</h3>
+                                <p>Graduated from Thorildsplans gymnasium with a High School Vocational Degree in Electrical Engineering at age 19.</p>
                             </div>
-                            <h3>Infrastructure as Code with Terraform</h3>
-                            <p>Infrastructure as Code project using Terraform-oriented workflows.</p>
-                            <div class="tag-list">
-                                <span>Terraform</span>
-                                <span>IaC</span>
+                        </li>
+                        <li class="timeline-event">
+                            <p class="timeline-year">2024</p>
+                            <div class="timeline-marker" aria-hidden="true"></div>
+                            <div class="timeline-copy">
+                                <h3>Return to programming</h3>
+                                <p>Took the Programming 1 high-school course in Python to strengthen and revisit programming skills, then applied to the DevOps Engineer programme at Chas Academy.</p>
                             </div>
-                        </article>
-                    </div>
-                    <div class="col-lg-6">
-                        <article class="experience-card">
-                            <div class="card-meta">
-                                <span>PROJECT</span>
-                                <span>CONFIGURATION</span>
+                        </li>
+                        <li class="timeline-event">
+                            <p class="timeline-year">2025</p>
+                            <div class="timeline-marker" aria-hidden="true"></div>
+                            <div class="timeline-copy">
+                                <h3>LIA at Bonnier News</h3>
+                                <p>Started a LIA internship at Bonnier News at age 21.</p>
                             </div>
-                            <h3>Configuration Management with Ansible</h3>
-                            <p>Configuration management project centered on repeatable system setup.</p>
-                            <div class="tag-list">
-                                <span>Ansible</span>
-                                <span>Automation</span>
+                        </li>
+                        <li class="timeline-event timeline-event-now">
+                            <p class="timeline-year">2026 · NOW</p>
+                            <div class="timeline-marker" aria-hidden="true"></div>
+                            <div class="timeline-copy">
+                                <h3>DevOps Specialist at Bonnier News</h3>
+                                <p>Graduated with a Higher Vocational Degree in DevOps Engineering from Chas Academy and joined Bonnier News as a DevOps Specialist at age 22.</p>
                             </div>
-                        </article>
-                    </div>
-                    <div class="col-lg-6">
-                        <article class="experience-card">
-                            <div class="card-meta">
-                                <span>OWN PROJECT</span>
-                                <span>STATIC SITE</span>
-                            </div>
-                            <h3>johnsilvell.com</h3>
-                            <p>This website, built as a static portfolio with HTML, CSS, JavaScript and Bootstrap.</p>
-                            <a class="text-link source-warning-link" href="https://github.com/josil-hacks/johnsilvell.com" target="_blank" rel="noopener">
-                                View source code
-                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
-                            </a>
-                        </article>
-                    </div>
+                        </li>
+                    </ol>
                 </div>
             </div>
         </section>

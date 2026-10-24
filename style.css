@@ -317,6 +317,23 @@ h3 {
     padding: 0.45rem 0.75rem;
 }
 
+.hero-image {
+    aspect-ratio: 1;
+    border: 1px solid rgb(255 255 255 / 16%);
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+    width: min(100%, 15rem);
+}
+
+.hero-image img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 5%;
+    width: 100%;
+}
+
 .hero-panel {
     background: rgb(255 255 255 / 8%);
     border: 1px solid rgb(255 255 255 / 16%);
@@ -409,6 +426,41 @@ h3 {
     width: 1.8rem;
 }
 
+.bubble-six {
+    height: 1.4rem;
+    right: 38%;
+    top: 13%;
+    width: 1.4rem;
+}
+
+.bubble-seven {
+    bottom: 25%;
+    height: 2.4rem;
+    left: 27%;
+    width: 2.4rem;
+}
+
+.bubble-eight {
+    height: 0.9rem;
+    right: 44%;
+    top: 44%;
+    width: 0.9rem;
+}
+
+.bubble-nine {
+    bottom: 7%;
+    height: 3.2rem;
+    right: 39%;
+    width: 3.2rem;
+}
+
+.bubble-ten {
+    height: 1.1rem;
+    left: -0.25rem;
+    top: 51%;
+    width: 1.1rem;
+}
+
 .network-line {
     background: rgb(255 255 255 / 20%);
     display: block;
@@ -440,26 +492,116 @@ h3 {
 
 .hero-section .bubble,
 .hero-section .network-line {
-    animation: node-drift 16s ease-in-out infinite alternate;
+    will-change: translate;
 }
 
-.hero-section .bubble-two,
-.hero-section .line-two {
-    animation-duration: 19s;
+.hero-section .bubble {
+    animation: bubble-drift 16s ease-in-out infinite alternate;
+    will-change: scale, translate;
 }
 
-.hero-section .bubble-three,
-.hero-section .line-three {
+.hero-section .network-line {
+    animation: line-drift 18s ease-in-out infinite alternate;
+}
+
+/* Each node has a slightly different route so the network feels alive, not synchronized. */
+.hero-section .bubble-one {
+    animation-duration: 18s;
+}
+
+.hero-section .bubble-two {
+    animation-delay: -7s;
+    animation-duration: 14s;
+    animation-direction: alternate-reverse;
+}
+
+.hero-section .bubble-three {
+    animation-delay: -11s;
+    animation-duration: 21s;
+}
+
+.hero-section .bubble-four {
+    animation-delay: -4s;
+    animation-duration: 24s;
+    animation-direction: alternate-reverse;
+}
+
+.hero-section .bubble-five {
+    animation-delay: -9s;
+    animation-duration: 13s;
+}
+
+.hero-section .bubble-six {
+    animation-delay: -15s;
+    animation-duration: 17s;
+    animation-direction: alternate-reverse;
+}
+
+.hero-section .bubble-seven {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+.hero-section .bubble-eight {
+    animation-delay: -12s;
+    animation-duration: 12s;
+    animation-direction: alternate-reverse;
+}
+
+.hero-section .bubble-nine {
+    animation-delay: -17s;
     animation-duration: 22s;
 }
 
-@keyframes node-drift {
-    from {
-        translate: 0 0;
+.hero-section .bubble-ten {
+    animation-delay: -3s;
+    animation-duration: 15s;
+    animation-direction: alternate-reverse;
+}
+
+.hero-section .line-one {
+    animation-duration: 20s;
+}
+
+.hero-section .line-two {
+    animation-delay: -8s;
+    animation-duration: 16s;
+    animation-direction: alternate-reverse;
+}
+
+.hero-section .line-three {
+    animation-delay: -13s;
+    animation-duration: 23s;
+}
+
+@keyframes bubble-drift {
+    0% {
+        scale: 0.82;
+        translate: -1.2rem 0.7rem;
     }
 
-    to {
+    45% {
+        scale: 1.1;
+        translate: 1.4rem -1.1rem;
+    }
+
+    100% {
+        scale: 0.9;
+        translate: 0.5rem 1.3rem;
+    }
+}
+
+@keyframes line-drift {
+    0% {
+        translate: -0.9rem 0.6rem;
+    }
+
+    50% {
         translate: 1.1rem -0.8rem;
+    }
+
+    100% {
+        translate: 0.4rem 1rem;
     }
 }
 
@@ -473,8 +615,95 @@ h3 {
     padding-left: 1.5rem;
 }
 
+/* Competence areas */
+.work-tracks {
+    border-top: 1px solid var(--color-border);
+}
+
+.work-track {
+    display: grid;
+    gap: clamp(2rem, 5vw, 5rem);
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    padding: clamp(2.5rem, 5vw, 4.25rem) 0;
+}
+
+.work-track + .work-track {
+    border-top: 1px solid var(--color-border);
+}
+
+.work-track-editorial {
+    max-width: 31rem;
+}
+
+.track-number {
+    color: var(--color-text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.4rem;
+}
+
+.work-track h3 {
+    font-size: clamp(1.6rem, 3vw, 2.1rem);
+    margin-bottom: 0.85rem;
+}
+
+.work-track-copy {
+    color: var(--color-text-muted);
+    font-family: var(--font-editorial);
+    font-size: clamp(1.18rem, 2vw, 1.35rem);
+    line-height: 1.55;
+    margin-bottom: 0;
+}
+
+.work-evidence {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.work-evidence-item {
+    align-items: start;
+    display: grid;
+    gap: 0.25rem 1rem;
+    padding: 1.1rem 0;
+}
+
+.work-evidence-item + .work-evidence-item {
+    border-top: 1px solid var(--color-border);
+}
+
+.work-evidence strong {
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.work-evidence-link {
+    color: var(--color-interactive);
+}
+
+.work-evidence-link:hover,
+.work-evidence-link:focus {
+    color: var(--color-primary);
+}
+
+.work-evidence span {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.kubernetes-tools {
+    color: var(--color-text-muted);
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 .feature-card,
-.experience-card,
 .learning-card,
 .trust-item,
 .creative-stack article {
@@ -487,7 +716,6 @@ h3 {
 }
 
 .feature-card p,
-.experience-card p,
 .learning-card p,
 .trust-item p,
 .creative-stack p {
@@ -541,14 +769,95 @@ h3 {
     margin-bottom: 1rem;
 }
 
-.experience-highlight {
-    background: linear-gradient(135deg, #fff, #f0f5ff);
-    border-color: rgb(52 120 246 / 24%);
+.experience-section {
+    background:
+        linear-gradient(180deg, rgb(255 255 255 / 82%), rgb(246 248 251 / 92%)),
+        radial-gradient(circle at 90% 20%, rgb(66 191 174 / 12%), transparent 30%);
+    overflow: hidden;
 }
 
-.context {
+.experience-timeline {
+    margin-inline: calc(50% - 50vw);
+    overflow-x: auto;
+    padding: 1rem max(1.5rem, calc((100vw - 1320px) / 2)) 2rem;
+    scrollbar-color: var(--color-interactive) transparent;
+    scrollbar-width: thin;
+}
+
+.timeline-list {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(15rem, 1fr));
+    list-style: none;
+    margin: 0;
+    min-width: 144rem;
+    padding: 0;
+    position: relative;
+}
+
+.timeline-list::before {
+    background: linear-gradient(90deg, var(--color-secondary-accent), var(--color-interactive) 44%, var(--color-creative));
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 3.85rem;
+}
+
+.timeline-event {
+    display: grid;
+    grid-template-rows: 2.9rem 2rem auto;
+    min-width: 0;
+    padding-right: 1.5rem;
+}
+
+.timeline-year {
     color: var(--color-primary);
-    font-weight: 700;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.timeline-marker {
+    background: var(--color-background-light);
+    border: 2px solid var(--color-interactive);
+    border-radius: 50%;
+    height: 0.8rem;
+    margin-top: 0.55rem;
+    position: relative;
+    width: 0.8rem;
+    z-index: 1;
+}
+
+.timeline-copy {
+    padding-top: 1.5rem;
+}
+
+.timeline-copy h3 {
+    font-size: 1.1rem;
+    line-height: 1.25;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-copy p {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    line-height: 1.55;
+    margin: 0;
+    max-width: 17rem;
+}
+
+.timeline-event-now .timeline-year {
+    color: var(--color-creative);
+}
+
+.timeline-event-now .timeline-marker {
+    background: var(--color-creative);
+    border-color: var(--color-creative);
+    box-shadow: 0 0 0 5px rgb(117 87 213 / 14%);
 }
 
 .learning-card {
@@ -826,6 +1135,10 @@ h3 {
 }
 
 @media (width <= 991.98px) {
+    .work-track {
+        grid-template-columns: 1fr;
+    }
+
     .site-navbar .navbar-nav {
         align-items: stretch;
         gap: 0.25rem;
@@ -847,6 +1160,8 @@ h3 {
     }
 
     .bubble-two,
+    .bubble-seven,
+    .bubble-nine,
     .line-two {
         display: none;
     }
