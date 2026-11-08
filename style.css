@@ -705,7 +705,6 @@ h3 {
 
 .feature-card,
 .learning-card,
-.trust-item,
 .creative-stack article {
     background: var(--color-surface);
     border: 1px solid var(--color-border);
@@ -717,7 +716,6 @@ h3 {
 
 .feature-card p,
 .learning-card p,
-.trust-item p,
 .creative-stack p {
     color: var(--color-text-muted);
 }
@@ -940,15 +938,25 @@ h3 {
     color: var(--color-text-muted);
 }
 
-.trust-grid,
 .creative-stack {
     display: grid;
     gap: 1rem;
 }
 
+.trust-grid {
+    border-top: 1px solid var(--color-border);
+}
+
 .trust-item {
-    border-left: 4px solid var(--color-secondary-accent);
-    box-shadow: none;
+    padding: 1.5rem 0;
+}
+
+.trust-item + .trust-item {
+    border-top: 1px solid var(--color-border);
+}
+
+.trust-item p {
+    color: var(--color-text-muted);
 }
 
 .trust-item h3,
