@@ -140,6 +140,12 @@ h3 {
     gap: 0.65rem;
 }
 
+.brand-mark h1 {
+    font-size: clamp(1.2rem, 2vw, 1.45rem);
+    font-weight: 200;
+    margin: 0;
+}
+
 .brand-symbol {
     align-items: center;
     background: var(--color-interactive);
